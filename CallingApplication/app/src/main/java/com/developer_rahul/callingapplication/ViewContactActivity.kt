@@ -96,7 +96,7 @@ class ViewContactActivity : AppCompatActivity() {
             }
         }
     }
-
+//
     private fun makeCall(phoneNumber: String) {
         val intent = Intent(Intent.ACTION_CALL)
         intent.data = Uri.parse("tel:$phoneNumber")
