@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtAadhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:hint="Enter Aadhar Number"
+        android:inputType="number"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/edtToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:hint="Enter Access Token"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnValidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

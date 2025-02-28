@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_field_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Field Name"
+        android:textStyle="bold"
+        android:background="@drawable/edittext_bg"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_field_data"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:hint="Field Data"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_save_field"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="Save Field" />
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:padding="20dp">
+
+    <!-- Toggle Switch to Switch between User & Hospital Registration -->
+    <ToggleButton
+        android:id="@+id/toggle_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Hospital Registration"
+        android:textOff="User Registration"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- ViewFlipper to switch between forms -->
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggle_registration"
+        android:layout_marginTop="20dp">
+
+        <!-- User Registration Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Registration"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_adhar_id_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aadhar No"
+                android:inputType="number"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_mobile_no_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No"
+                android:inputType="phone"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_username_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="text"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <CheckBox
+                android:id="@+id/chk_pass_show_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"/>
+
+            <Button
+                android:id="@+id/btn_register_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register User"
+                android:backgroundTint="@color/secondaryColor"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Hospital Registration Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/card_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Registration"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/et_hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hospital Name"
+                android:inputType="text"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_doctor_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor ID"
+                android:inputType="text"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/et_doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor Name"
+                android:inputType="text"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/et_doctor_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor Contact No"
+                android:inputType="phone"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/et_doctor_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor Username"
+                android:inputType="phone"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/et_doctor_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor Password"
+                android:inputType="phone"
+                android:background="@drawable/et_rounded_corner"
+                android:padding="10dp"/>
+
+
+            <Button
+                android:id="@+id/btn_register_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Hospital"
+                android:backgroundTint="@color/secondaryColor"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </ViewFlipper>
+</RelativeLayout>
